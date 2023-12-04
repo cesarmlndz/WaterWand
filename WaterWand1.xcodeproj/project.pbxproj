@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494FAE7D2A68EC5F0091A84F /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 494FAE7C2A68EC5F0091A84F /* MapboxMaps */; };
+		499F07DC2B03F5FC00D179A7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F07DB2B03F5FC00D179A7 /* Location.swift */; };
+		499F07DE2B03F62B00D179A7 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F07DD2B03F62B00D179A7 /* LocationViewModel.swift */; };
+		499F07E02B03F67300D179A7 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F07DF2B03F67300D179A7 /* LocationMapView.swift */; };
+		49B55C202AC26EE2009C257A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B55C1F2AC26EE2009C257A /* CoreBluetooth.framework */; };
 		49BE59E02A68CE6E00D2F228 /* WaterWand1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE59DF2A68CE6E00D2F228 /* WaterWand1App.swift */; };
 		49BE59E22A68CE6E00D2F228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE59E12A68CE6E00D2F228 /* ContentView.swift */; };
 		49BE59E42A68CE6E00D2F228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BE59E32A68CE6E00D2F228 /* Assets.xcassets */; };
 		49BE59E72A68CE6E00D2F228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BE59E62A68CE6E00D2F228 /* Preview Assets.xcassets */; };
+		49BE59EF2A68CEAF00D2F228 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE59EE2A68CEAF00D2F228 /* About.swift */; };
+		49BE59F32A68CECB00D2F228 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE59F22A68CECB00D2F228 /* Data.swift */; };
+		49F5C7062A706F9900A57863 /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F5C7052A706F9900A57863 /* SplashPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		499F07DB2B03F5FC00D179A7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		499F07DD2B03F62B00D179A7 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		499F07DF2B03F67300D179A7 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		49B55C1F2AC26EE2009C257A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		49BE59DC2A68CE6E00D2F228 /* WaterWand1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterWand1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BE59DF2A68CE6E00D2F228 /* WaterWand1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWand1App.swift; sourceTree = "<group>"; };
 		49BE59E12A68CE6E00D2F228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49BE59E32A68CE6E00D2F228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BE59E62A68CE6E00D2F228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49BE59EE2A68CEAF00D2F228 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		49BE59F22A68CECB00D2F228 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		49BE59F62A68E93000D2F228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49F5C7052A706F9900A57863 /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B55C202AC26EE2009C257A /* CoreBluetooth.framework in Frameworks */,
+				494FAE7D2A68EC5F0091A84F /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B55C1E2AC26EE1009C257A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49B55C1F2AC26EE2009C257A /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49BE59D32A68CE6E00D2F228 = {
 			isa = PBXGroup;
 			children = (
 				49BE59DE2A68CE6E00D2F228 /* WaterWand1 */,
 				49BE59DD2A68CE6E00D2F228 /* Products */,
+				49B55C1E2AC26EE1009C257A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +78,14 @@
 		49BE59DE2A68CE6E00D2F228 /* WaterWand1 */ = {
 			isa = PBXGroup;
 			children = (
+				49BE59F62A68E93000D2F228 /* Info.plist */,
+				49BE59ED2A68CE8E00D2F228 /* Views */,
 				49BE59DF2A68CE6E00D2F228 /* WaterWand1App.swift */,
 				49BE59E12A68CE6E00D2F228 /* ContentView.swift */,
 				49BE59E32A68CE6E00D2F228 /* Assets.xcassets */,
 				49BE59E52A68CE6E00D2F228 /* Preview Content */,
+				499F07DB2B03F5FC00D179A7 /* Location.swift */,
+				499F07DD2B03F62B00D179A7 /* LocationViewModel.swift */,
 			);
 			path = WaterWand1;
 			sourceTree = "<group>";
@@ -65,6 +96,17 @@
 				49BE59E62A68CE6E00D2F228 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49BE59ED2A68CE8E00D2F228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49BE59EE2A68CEAF00D2F228 /* About.swift */,
+				49BE59F22A68CECB00D2F228 /* Data.swift */,
+				49F5C7052A706F9900A57863 /* SplashPage.swift */,
+				499F07DF2B03F67300D179A7 /* LocationMapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +125,9 @@
 			dependencies = (
 			);
 			name = WaterWand1;
+			packageProductDependencies = (
+				494FAE7C2A68EC5F0091A84F /* MapboxMaps */,
+			);
 			productName = WaterWand1;
 			productReference = 49BE59DC2A68CE6E00D2F228 /* WaterWand1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 49BE59D32A68CE6E00D2F228;
+			packageReferences = (
+				494FAE7B2A68EC5F0091A84F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = 49BE59DD2A68CE6E00D2F228 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499F07E02B03F67300D179A7 /* LocationMapView.swift in Sources */,
 				49BE59E22A68CE6E00D2F228 /* ContentView.swift in Sources */,
+				49F5C7062A706F9900A57863 /* SplashPage.swift in Sources */,
+				49BE59F32A68CECB00D2F228 /* Data.swift in Sources */,
+				49BE59EF2A68CEAF00D2F228 /* About.swift in Sources */,
 				49BE59E02A68CE6E00D2F228 /* WaterWand1App.swift in Sources */,
+				499F07DC2B03F5FC00D179A7 /* Location.swift in Sources */,
+				499F07DE2B03F62B00D179A7 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +321,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterWand1/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XV5B96A93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterWand1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +351,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WaterWand1/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XV5B96A93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterWand1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		494FAE7B2A68EC5F0091A84F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		494FAE7C2A68EC5F0091A84F /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494FAE7B2A68EC5F0091A84F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49BE59D42A68CE6E00D2F228 /* Project object */;
 }

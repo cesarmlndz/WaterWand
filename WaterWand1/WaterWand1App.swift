@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WaterWand1App: App {
+    @StateObject var locationManager = LocationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashPage()
+                  .environmentObject(locationManager)
         }
     }
 }
